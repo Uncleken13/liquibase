@@ -36,9 +36,9 @@ jobs:
     name: Re-version artifacts ${{ needs.setup.outputs.version }}
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
         name: Checkout liquibase-pro
         with:
           repository: liquibase/liquibase-pro
@@ -104,7 +104,7 @@ jobs:
     name: Build Installers
     runs-on: macos-latest #needs macos for apple notarization
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
 
       - name: Restore Completed Artifacts
         uses: actions/cache@v3.3.1
