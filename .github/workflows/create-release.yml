@@ -58,7 +58,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '8'
+          java-version: '8.0.504+1'
           distribution: 'adopt'
           gpg-private-key: ${{ secrets.GPG_SECRET }}
           gpg-passphrase: GPG_PASSPHRASE
@@ -115,7 +115,7 @@ jobs:
       - name: Set up JDK for GPG
         uses: actions/setup-java@v3
         with:
-          java-version: '8'
+          java-version: '8.0.504+1'
           distribution: 'adopt'
           gpg-private-key: ${{ secrets.GPG_SECRET }}
           gpg-passphrase: GPG_PASSPHRASE
