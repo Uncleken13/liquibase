@@ -37,9 +37,9 @@
 
         <!-- provided scope -->
         <dependency>
-            <groupId>jakarta.enterprise</groupId>
-            <artifactId>jakarta.enterprise.cdi-api</artifactId>
-            <version>3.0.0</version>
+            <groupId>jakarta.cdi</groupId>
+            <artifactId>jakarta.cdi-api</artifactId>
+            <version>5.0.0</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
